@@ -46,3 +46,15 @@ def plusOne(digits):
             else:
                 digits[i] = 0
         return [1] + digits
+
+
+# leetCode error: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+def removeDuplicates_PushBack_(nums):
+        s1=set(nums)
+        l2=list(s1)
+        len1=len(nums)-len(l2)
+        for i in range(len1):
+            l2.append(("_"))
+        return l2
+print(removeDuplicates_PushBack_([0,0,1,1,1,2,2,3,3,4]))
+
