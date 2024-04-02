@@ -26,5 +26,23 @@ def searchInsert( nums, target):
                 left = mid + 1
             else:
                 right = mid - 1
-        
         return left
+
+# stringdagi eng uzun soz toping
+def lengthOfLastWord( s):
+        list1=[]
+        for i in s.split():
+            s1=len(i)
+            list1.append(s1)
+        return list1[-1]  
+
+
+def plusOne(digits):
+        n = len(digits)
+        for i in range(n - 1, -1, -1):
+            if digits[i] < 9:
+                digits[i] += 1
+                return digits
+            else:
+                digits[i] = 0
+        return [1] + digits
