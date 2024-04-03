@@ -103,6 +103,18 @@ print(containsDuplicate([1,2,3,4,5,1,3]))
  
 
 
+#Input: n = 00000010100101000001111010011100
+#Output:    964176192 (00111001011110000010100101000000)
+n="00000010100101000001111010011100"
+def reverseBits(n):
+    s=0
+    revers=n[::-1]
+    for i in range(len(n)):
+        if n[i]==str(1):
+            s+=2**i
+    return s,revers
+print(reverseBits(n))
 
+        
 
 
