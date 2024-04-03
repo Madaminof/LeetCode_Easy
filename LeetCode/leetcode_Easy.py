@@ -1,4 +1,4 @@
-# example_1 easy
+""""# example_1 easy
 def twoSum(self, nums, target):
         self.n = nums
         self.t = target
@@ -57,4 +57,52 @@ def removeDuplicates_PushBack_(nums):
             l2.append(("_"))
         return l2
 print(removeDuplicates_PushBack_([0,0,1,1,1,2,2,3,3,4]))
+"""
+
+"""
+s="dabba"   
+def solution(s1):
+     l=[]
+     for i in s1:
+        l.append(i)
+     dic={}
+     for i in l:
+        dic[i]=l.count(i)
+     return dic    
+print(solution(s))   """
+
+
+  
+"""
+def RemoveElement(head,val):
+    l=[]
+    for i in head:
+        if i!=val:
+            l.append(i)
+    return l
+print(RemoveElement([1,2,6,3,4,5,6],6))"""
+
+
+
+def containsDuplicate(nums):
+    c=0
+    l1=[]
+    result=True
+    for i in nums:
+        l1.append(nums.count(i))
+    for i in l1:
+        if i>1:
+            c+=1
+    if c>=1:
+        result= True
+    else:
+        result=False
+    return result    
+print(containsDuplicate([1,2,3,4,5,1,3]))    
+
+ 
+
+
+
+
 
